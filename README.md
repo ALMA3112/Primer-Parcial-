@@ -296,7 +296,7 @@
     return 0;
   }
   ```
-- Conclusiones: 
+## Conclusiones: 
  * Paralelismo y Concurrencia: En términos de paralelismo y concurrencia, el lenguaje C destaca por su eficiencia en velocidad y control. Sin embargo, esta ventaja viene con una mayor complejidad en su manejo, lo que puede hacer que sea más difícil de trabajar. Por otro lado, Haskell ofrece un enfoque más amigable para la concurrencia y la seguridad debido a su inmutabilidad y funciones puras. Esto facilita la creación de programas concurrentes, pero puede resultar en un rendimiento más lento debido a la gestión automática de la memoria y la sobrecarga del recolector de basura.
 
 
