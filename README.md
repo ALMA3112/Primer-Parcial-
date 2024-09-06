@@ -89,6 +89,70 @@
  En este enfoque de programación dinámica, almacenamos los resultados de los cálculos intermedios del factorial en un arreglo, evitando así realizar el mismo cálculo más de una vez. Esto no solo reduce significativamente el tiempo de ejecución, sino que también disminuye la complejidad del cálculo del factorial.
 
  ## Punto 2
+ - Ejercicio en Python:
+    ```Py
+    def bubble_sort(students):
+    n = len(students)
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            # Comparar por calificación (descendente) y luego por nombre (ascendente)
+            if (students[j][1] < students[j + 1][1]) or \
+               (students[j][1] == students[j + 1][1] and students[j][0] > students[j + 1][0]):
+                students[j], students[j + 1] = students[j + 1], students[j]
+    return students
+
+    # Lista de ejemplo: (nombre, calificación)
+    students = [
+    ("Ana", 85),
+    ("Carlos", 92),
+    ("Beatriz", 78),
+    ("David", 92),
+    ("Elena", 89)
+  ]
+
+    sorted_students = bubble_sort(students)
+    print("Estudiantes ordenados:")
+    for student in sorted_students:
+    print(f"{student[0]}: {student[1]}")
+    ```
+- Ejercicio en Haskell:
+  ```hs
+      import Data.List (sortBy)
+      import Data.Ord (comparing)
+
+      ordenarEstudiantes :: [(String, Int)] -> [(String, Int)]
+      ordenarEstudiantes = sortBy (\(name1, grade1) (name2, grade2) ->
+      compare grade2 grade1 <> compare name1 name2)
+
+      students :: [(String, Int)]
+      students = [("Ana", 85), ("Luis", 90), ("Carlos", 85), ("Beto", 90), ("David", 95)]
+      main :: IO ()
+      main = print (ordenarEstudiantes students)
+    ```
+- Convclusion: La comparación entre Python y Haskell nos lleva a explorar dos enfoques muy diferentes dentro de la programación. Python, con su sintaxis clara y su enfoque en la legibilidad, se enmarca en el paradigma imperativo y orientado a objetos. En contraste, Haskell, un lenguaje funcional puro, se basa en conceptos como la inmutabilidad, la recursión y el uso 
+de funciones de orden superior.
+
+Python (Imperativo):
+Python es una excelente opción para quienes buscan tener un control preciso sobre cada paso de la ejecución del programa. Su estilo imperativo permite que los desarrolladores 
+definan claramente cómo debe realizarse cada tarea, lo que puede ser útil en muchas aplicaciones prácticas. Sin embargo, ese nivel de control también puede resultar en código 
+más extenso y, en ocasiones, propenso a errores, especialmente cuando se manejan procesos más complejos.
+
+Haskell (Declarativo):
+Por otro lado, Haskell se enfoca en la simplicidad y la abstracción. Su estilo declarativo permite que el código sea más conciso y expresivo, sin entrar en detalles técnicos 
+innecesarios sobre la implementación. Esto lo hace ideal cuando se busca claridad y elegancia en el código, aunque para quienes no están acostumbrados a la programación funcional, 
+Haskell puede tener una curva de aprendizaje más pronunciada.
+
+Python
+Facilidad de aprendizaje: Su sencillez lo convierte en una excelente opción para quienes están empezando.
+Versatilidad: Es útil para una amplia variedad de aplicaciones, desde scripting hasta desarrollo web y científico.
+Comunidad: Python cuenta con una gran comunidad y un amplio catálogo de librerías.
+Legibilidad: Para quienes no tienen experiencia con la programación funcional, el código en Python suele ser más fácil de leer y entender.
+
+Haskell
+Concisión: El código en Haskell tiende a ser más corto y directo.
+Corrección: Su sólido sistema de tipos ayuda a evitar muchos errores comunes.
+Paralelismo: Al ser un lenguaje funcional, facilita la programación concurrente y paralela.
+Abstracción: Permite crear soluciones más generales y reutilizables, lo que aumenta la flexibilidad del código.
 
  ## Punto 3
  
