@@ -87,3 +87,8 @@
     }
   ```
  En este enfoque de programación dinámica, almacenamos los resultados de los cálculos intermedios del factorial en un arreglo, evitando así realizar el mismo cálculo más de una vez. Esto no solo reduce significativamente el tiempo de ejecución, sino que también disminuye la complejidad del cálculo del factorial.
+
+ ## Punto 2
+
+ ##Punto 3
+ 
