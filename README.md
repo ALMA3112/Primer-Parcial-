@@ -1,4 +1,8 @@
-# Parcial 
+# Parcial
+## Integrantes:
+  - Carlos Cardona 
+  - Santiago Ruiz
+  - Julian Briñez
   ## Punto 1
   - Resuelto de forma iterativa
 
@@ -108,7 +112,7 @@
     ("Beatriz", 78),
     ("David", 92),
     ("Elena", 89)
-  ]
+    ]
 
     sorted_students = bubble_sort(students)
     print("Estudiantes ordenados:")
@@ -131,7 +135,6 @@
     ```
 - Convclusion: La comparación entre Python y Haskell nos lleva a explorar dos enfoques muy diferentes dentro de la programación. Python, con su sintaxis clara y su enfoque en la legibilidad, se enmarca en el paradigma imperativo y orientado a objetos. En contraste, Haskell, un lenguaje funcional puro, se basa en conceptos como la inmutabilidad, la recursión y el uso 
 de funciones de orden superior.
-
 Python (Imperativo):
 Python es una excelente opción para quienes buscan tener un control preciso sobre cada paso de la ejecución del programa. Su estilo imperativo permite que los desarrolladores 
 definan claramente cómo debe realizarse cada tarea, lo que puede ser útil en muchas aplicaciones prácticas. Sin embargo, ese nivel de control también puede resultar en código 
@@ -360,7 +363,7 @@ Abstracción: Permite crear soluciones más generales y reutilizables, lo que au
     return 0;
   }
   ```
-## Conclusiones: 
+## Conclusiones punto 3:
  * Paralelismo y Concurrencia: En términos de paralelismo y concurrencia, el lenguaje C destaca por su eficiencia en velocidad y control. Sin embargo, esta ventaja viene con una mayor complejidad en su manejo, lo que puede hacer que sea más difícil de trabajar. Por otro lado, Haskell ofrece un enfoque más amigable para la concurrencia y la seguridad debido a su inmutabilidad y funciones puras. Esto facilita la creación de programas concurrentes, pero puede resultar en un rendimiento más lento debido a la gestión automática de la memoria y la sobrecarga del recolector de basura.
 
 
